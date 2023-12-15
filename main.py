@@ -14,12 +14,14 @@ from flask import json
 from random import randint
 from time import gmtime,time
 from flask_sqlalchemy import SQLAlchemy as _BaseSQLAlchemy
+from flask_cors import CORS
+
 
 
 # Flask app initialization
 
 app = Flask(__name__)
-
+CORS(app)
 #database configuration
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://sanjuwings04:3gklnZaORj8Q@ep-soft-king-86780931.ap-southeast-1.aws.neon.tech/ecoTrack?sslmode=require'
@@ -354,6 +356,6 @@ def hourlydetails():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
-  
+   
