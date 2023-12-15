@@ -22,7 +22,7 @@ app = Flask(__name__)
 
 #database configuration
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://sanjuwings04:2WOQUFYy7fxH@ep-soft-king-86780931.ap-southeast-1.aws.neon.tech/ecoTrack?sslmode=require'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://sanjuwings04:2WOQUFYy7fxH@ep-soft-king-86780931.ap-southeast-1.aws.neon.tech/ecotrack?sslmode=require'
 # class for database preperation
 
 class SQLAlchemy(_BaseSQLAlchemy):
