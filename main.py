@@ -32,6 +32,7 @@ class SQLAlchemy(_BaseSQLAlchemy):
 
 # run database
 
+#testcommit
 db = SQLAlchemy(app)
 
 
